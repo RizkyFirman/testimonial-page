@@ -22,19 +22,20 @@ Note for text colors:
 
 body{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: scroll;
     background-color: var(--neutral-color2);
 }
 
 main{
     max-width: 1300px;
-    height: auto;
+    height: fit-content;
     margin: 1em auto;
     /* border: solid 3px magenta; */
     display: grid;
     grid-template: 50% auto / repeat(4, 1fr);
     gap: 2em;
+    padding: 1rem 2rem;
 }
 
 img{
@@ -156,16 +157,16 @@ article, header{
 
     body{
         width: 100vw;
-        height: auto;
-        overflow: scroll;
+        height: 100vh;
     }
     
     main{
         width: 90%;
-        height: auto;
-        grid-template: repeat(4, 1fr) / 1fr;
+        height: 100%;
+        grid-template: repeat(4, 1fr) / 100%;
         column-gap: 0;
         row-gap: 1em;
+        overflow: scroll;
     }
 
     .container{
