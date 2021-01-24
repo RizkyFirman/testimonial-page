@@ -42,7 +42,7 @@ img{
     border-radius: 50px;
 }
 
-article, header{
+.bold, .quotet, header{
     position: relative;
     z-index: 2;
 }
